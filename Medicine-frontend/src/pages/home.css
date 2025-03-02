@@ -1,0 +1,109 @@
+/* Home Page Styling */
+/* Home Page Styling */
+/* Home Page Styling */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Aligns content to the top */
+    align-items: flex-start;      /* Moves content to the left */
+    height: 100vh;
+    text-align: left;
+    padding: 40px 0 40px 20px; /* Add left padding for spacing */
+    margin-top: 80px; /* Push content below the navbar */
+    width: 100%; /* Ensures full width usage */
+    background: url("https://img.freepik.com/free-vector/medical-healthcare-background-blue_1017-26807.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+}
+
+
+
+/* Main Heading */
+.home-heading {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff6b6b, #ffcc33);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+/* Subheading */
+.home-subheading {
+    font-size: 22px;
+    color:black; /* Bright Yellow-Gold for Visibility */
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Stronger Shadow for Contrast */
+}
+
+
+/* Features Section */
+.features-container {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-left: 5px solid #ffcc33;
+    width: 90%;
+    max-width: 600px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Features Heading */
+.features-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffcc33;
+    margin-bottom: 15px;
+}
+
+/* Feature List */
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    font-size: 17px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover Effect */
+.features-list li:hover {
+    background: rgba(255, 204, 51, 0.6);
+    transform: scale(1.05);
+    color: black;
+}
+
+/* Icons */
+.features-list li::before {
+    content: "✔";
+    color: #ffcc33;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

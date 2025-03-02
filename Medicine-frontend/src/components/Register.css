@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./assets/img.png.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Signup Container */
+.signup-container {
+    background-color: #e0fab6;
+    padding: 30px;
+    margin-right: 700px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(226, 43, 43, 0.1);
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #cf1515;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="address"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #c72121;
+    border-radius: 4px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ce1a1a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: -12px;
+    margin-bottom: 12px;
+}
+
+/* Success Message */
+.success {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+}/* Body Styling */
